@@ -1,0 +1,44 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### JetBrains PyCharm ###
+*.pyc
+*.sqlite3
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+/target/
+/src/META-INF/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### log ###
+/log/
+/logs/
+.log
+
+### dependencies ###
+/dependencies/
+/build/
+/dist/
+*.tar.gz
+*.out
