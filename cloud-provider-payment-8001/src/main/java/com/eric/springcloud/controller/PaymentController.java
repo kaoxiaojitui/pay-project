@@ -1,7 +1,8 @@
 package com.eric.springcloud.controller;
 
-import com.eric.springcloud.entities.CommonResult;
-import com.eric.springcloud.entities.Payment;
+
+import com.eric.spring.entities.CommonResult;
+import com.eric.spring.entities.Payment;
 import com.eric.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

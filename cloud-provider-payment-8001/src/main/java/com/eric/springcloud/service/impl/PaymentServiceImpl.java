@@ -1,10 +1,8 @@
 package com.eric.springcloud.service.impl;
 
+import com.eric.spring.entities.Payment;
 import com.eric.springcloud.dao.PaymentDao;
-import com.eric.springcloud.entities.Payment;
 import com.eric.springcloud.service.PaymentService;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
