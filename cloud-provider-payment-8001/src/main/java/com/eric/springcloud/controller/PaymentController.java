@@ -5,10 +5,7 @@ import com.eric.springcloud.entities.Payment;
 import com.eric.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author eric.li
@@ -22,7 +19,7 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @PostMapping(value = "/payment/add")
-    public CommonResult add(Payment payment){
+    public CommonResult add(@RequestBody Payment payment){
         int result = paymentService.add(payment);
         log.info("result : {}", result);
         if (result > 0){
