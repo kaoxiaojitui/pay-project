@@ -1,7 +1,7 @@
 package com.eric.spring.controller;
 
-import com.eric.spring.entities.CommonResult;
-import com.eric.spring.entities.Payment;
+import com.eric.common.entities.CommonResult;
+import com.eric.common.entities.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -15,7 +15,7 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static String host = "http://localhost:8001";
+    private static String host = "http://CLOUD-PAYMENT-SERVICE";
 
     @PostMapping(value = "/consumer/payment/add")
     public CommonResult add(@RequestBody Payment payment){
