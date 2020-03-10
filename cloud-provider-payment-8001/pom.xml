@@ -11,9 +11,10 @@
 
     <artifactId>cloud-provider-payment-8001</artifactId>
     <dependencies>
+        <!-- Common entities-->
         <dependency>
-            <groupId>com.eric.spring</groupId>
-            <artifactId>cloud-api-common</artifactId>
+            <groupId>com.eric.springcloud</groupId>
+            <artifactId>cloud-common-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

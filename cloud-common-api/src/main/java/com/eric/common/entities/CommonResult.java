@@ -1,4 +1,4 @@
-package com.eric.spring.entities;
+package com.eric.common.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @author eric.li
- * @date 2020/3/9
+ * @date 2020/3/10
  */
 @Data
 @AllArgsConstructor
