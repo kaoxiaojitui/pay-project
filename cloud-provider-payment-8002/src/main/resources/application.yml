@@ -34,4 +34,4 @@ eureka:
     lease-expiration-duration-in-seconds: 90
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: cn.spectrumrpc.springcloud.entities
+#  type-aliases-package: cn.spectrumrpc.springcloud.entities

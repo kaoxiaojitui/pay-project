@@ -6,7 +6,11 @@ import com.eric.common.entities.Payment;
 import com.eric.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author eric.li
@@ -18,6 +22,18 @@ public class PaymentController {
 
     @Autowired
     private PaymentService paymentService;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
+    @GetMapping(value = "/payment/discovery")
+    public Object discovery(){
+        List<String> services = discoveryClient.getServices();
+
+        List<ServiceInstance> instances = discoveryClient.getInstances("cloud-payment-service");
+
+        return this.discoveryClient;
+    }
 
     @PostMapping(value = "/payment/add")
     public CommonResult add(@RequestBody Payment payment){
