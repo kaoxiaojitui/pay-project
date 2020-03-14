@@ -29,9 +29,22 @@ public class PaymentController {
     @GetMapping(value = "/payment/discovery")
     public Object discovery(){
         List<String> services = discoveryClient.getServices();
+        for (String service:services) {
+            System.out.println(service);
+        }
 
         List<ServiceInstance> instances = discoveryClient.getInstances("cloud-payment-service");
+        for (ServiceInstance service: instances) {
+            System.out.println(service.getHost());
+            System.out.println(service.getInstanceId());
+            System.out.println(service.getMetadata());
+            System.out.println(service.getPort());
+            System.out.println(service.getScheme());
+            System.out.println(service.getServiceId());
+            System.out.println(service.getUri());
+            System.out.println(service.isSecure());
 
+        }
         return this.discoveryClient;
     }
 

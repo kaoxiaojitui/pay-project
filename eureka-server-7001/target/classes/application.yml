@@ -10,7 +10,7 @@ eureka:
     hostname: eureka01.com
   server:
     enable-self-preservation: false # 禁用eureka的自我保护功能
-    eviction-interval-timer-in-ms: 2000
+    eviction-interval-timer-in-ms: 2000  #心跳检测时间
   client:
     register-with-eureka: false  #是否注册服务
     fetch-registry: false #是否检索服务
