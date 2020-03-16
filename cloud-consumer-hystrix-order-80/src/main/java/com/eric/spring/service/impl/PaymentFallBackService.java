@@ -1,7 +1,6 @@
 package com.eric.spring.service.impl;
 
 import com.eric.spring.service.PaymentHystrixService;
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 
 /**

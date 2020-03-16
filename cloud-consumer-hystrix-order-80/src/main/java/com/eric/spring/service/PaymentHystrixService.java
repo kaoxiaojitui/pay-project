@@ -2,7 +2,6 @@ package com.eric.spring.service;
 
 import com.eric.spring.service.impl.PaymentFallBackService;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 

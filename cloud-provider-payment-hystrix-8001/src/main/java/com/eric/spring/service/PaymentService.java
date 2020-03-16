@@ -7,4 +7,5 @@ package com.eric.spring.service;
 public interface PaymentService {
     String paymentInfo();
     String paymentTimeout();
+    String paymentCircuitBreaker(Integer id);
 }
