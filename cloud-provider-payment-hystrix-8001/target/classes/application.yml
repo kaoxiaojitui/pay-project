@@ -35,3 +35,9 @@ eureka:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 #  type-aliases-package: cn.spectrumrpc.springcloud.entities
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
